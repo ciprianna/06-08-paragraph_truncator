@@ -20,8 +20,7 @@ class ParagraphTruncator
   #
   # arguments - Hash
   #
-  # Returns the shortened_paragraph, a String, with the cutoff_characters,
-  #   another String, from the arguments Hash.
+  # Returns the paragraph_output, a String, or returns the original paragraph
   def truncate_paragraph(arguments)
     paragraph = arguments[:paragraph]
     if paragraph.length > arguments[:character_length]
